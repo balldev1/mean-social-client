@@ -1,0 +1,100 @@
+.Auth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 4rem;
+    position: relative;
+}
+
+.Auth>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* {left side} */
+
+.a-left{
+    gap: 2rem;
+}
+
+.a-left>img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.Webname>h1{
+    font-size: 3rem;
+    background-color: red;
+    /* create the gradient */
+    background-image:var(--buttonBg) ;
+    /* set background */
+    background-size:100% ;
+    background-repeat: repeat;
+    /* use text mask background */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip:text;
+    -moz-text-fill-color:transparent
+}
+
+/* background-image: var(--buttonBg);: กำหนดรูปภาพหรือพื้นหลังที่จะใช้ โดยใช้ตัวแปร CSS --buttonBg ที่เก็บค่าสีหรือ URL ของรูปภาพ
+
+background-size: 100%;: กำหนดขนาดของพื้นหลังให้เต็มขนาด
+
+background-repeat: repeat;: กำหนดให้พื้นหลังทำการเลื่อนซ้ำเพื่อกรอบครอบพื้นที่ตามขนาดขององค์ประกอบหรือตัวอักษร
+
+-webkit-background-clip: text;: กำหนดให้พื้นหลังเกิดการคลิป (clip) ตามรูปร่างของตัวอักษร
+
+-webkit-text-fill-color: transparent;: กำหนดให้สีของตัวอักษรเป็นโปร่งแสง (transparent) เพื่อให้พื้นหลังเป็นส่วนที่แสดงผล
+
+-moz-background-clip: text;: คล้ายกับคุณสมบัติ -webkit-background-clip แต่ใช้สำหรับเบราว์เซอร์ Mozilla Firefox
+
+-moz-text-fill-color: transparent;: คล้ายกับคุณสมบัติ -webkit-text-fill-color แต่ใช้สำหรับเบราว์เซอร์ Mozilla Firefox */
+
+.infoForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.infoInput{
+    border: none;
+    outline:none;
+    background-color: var(--inputColor);
+    border-radius: 8px;
+    padding: 20px;
+    flex:1;
+}
+
+.infoForm>div{
+    display: flex;
+    gap: 1rem;
+    height: 2rem;
+    width: 100%;
+}
+
+/* .infoForm>div>input{
+    padding-bottom: 30px;
+} */
+
+.infoButton{
+    width: 6rem;
+    height: 2rem;
+    align-self: flex-end;
+}
+
+.authForm{
+    background-color: var(--cardColor);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.authForm>div{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
